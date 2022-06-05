@@ -25,22 +25,22 @@ const Header = () => {
                         </NavLink>
                     </li>
                     <li className={s.headerMenuItem} >
-                        <NavLink to='offers' >
+                        <NavLink to='/offers' >
                             Акции
                         </NavLink>
                     </li>
                     <li className={s.headerMenuItem} >
-                        <NavLink to='restaurants' >
+                        <NavLink to='/restaurants' >
                             Рестораны
                         </NavLink>
                     </li>
                     <li className={s.headerMenuItem} >
-                        <NavLink to='activities' >
+                        <NavLink to='/activities' >
                             Мероприятия
                         </NavLink>
                     </li>
                     <li className={s.headerMenuItem} >
-                        <NavLink to='contacts' >
+                        <NavLink to='/contacts' >
                             Контакты
                         </NavLink>
                     </li>
@@ -60,49 +60,44 @@ const Footer = () => {
                     </NavLink>
                 </li>
                 <li className={s.footerMenuItem}>
-                    <NavLink to='rooms' >
-                        Номера
-                    </NavLink>
-                </li>
-                <li className={s.footerMenuItem}>
-                    <NavLink to='offers' >
+                    <NavLink to='/offers' >
                         Акции
                     </NavLink>
                     <ul className={s.footerMenuItemSubmenu}>
                         <li>
-                            <NavLink to='guest-visit' >
+                            <NavLink to='/offers/guest-visit' >
                                 Гостевой визит
                             </NavLink>
                         </li>
                         <li>
-                            <NavLink to='you-best-birthday' >
+                            <NavLink to='/offers/you-best-birthday' >
                                 Ваш лучший день рождения
                             </NavLink>
                         </li>
                         <li>
-                            <NavLink to='relax-more-pay-less' >
+                            <NavLink to='/offers/relax-more-pay-less' >
                                 Отдыхайте больше - платите меньше
                             </NavLink>
                         </li>
                     </ul>
                 </li>
                 <li className={s.footerMenuItem}>
-                    <NavLink to='activities' >
+                    <NavLink to='/activities' >
                         Мероприятия
                     </NavLink>
                     <ul className={s.footerMenuItemSubmenu}>
                         <li>
-                            <NavLink to='business-events' >
+                            <NavLink to='/activities/business-events' >
                                 Деловые мероприятия
                             </NavLink>
                         </li>
                         <li>
-                            <NavLink to='banquets' >
+                            <NavLink to='/activities/banquets' >
                                 Банкеты
                             </NavLink>
                         </li>
                         <li>
-                            <NavLink to='weddings' >
+                            <NavLink to='/activities/weddings' >
                                 Свадьбы
                             </NavLink>
                         </li>

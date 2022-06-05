@@ -118,57 +118,58 @@
     letter-spacing: -0.02em;
 }
 
-.offers {
+.list {
     width: 90%;
     margin: 75px auto 75px;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
 }
-.offer {
-    width: 32%;
-    height: 34vw;
-    position: relative;
+.item {
+    height: 60vh;
+    width: 70%;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+}
+.item:nth-child(even) {
+    flex-direction: row-reverse;
+}
+.itemImage {
+    display: block;
+    width: 50%;
+    height: 100%;
+
     overflow: hidden;
 }
-.offerImage {
-    position: absolute;
-    top: 0;
-    left: 0;
+.itemImage img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     object-position: center;
     transition: .7s ease;
 }
-.offer:hover .offerImage {
+.itemImage:hover img {
     transform: scale(1.1);
 }
-.offersText {
-    width: 100%;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    padding: 30px;
-    color: #fff;
+.itemText {
+    width: 50%;
+    padding-left: 65px;
+}
+.item:nth-child(even) .itemText {
+    padding: 0;
+}
+
+.itemText a {
     text-decoration: none;
+    color: #000;
 }
-.offersText h3{
-    font-size: 24px;
-    line-height: 1.1em;
-    letter-spacing: -0.06em;
-    margin: 10px 0 12px;
-    font-weight: 500;
-}
-.offersText span {
-    text-transform: lowercase;
-    font-size: 16px;
-    line-height: 1.4;
-    font-weight: 700;
-    padding-left: 12px;
-    transition: .7s ease;
+.itemText a span {
     position: relative;
+    font-weight: 700;
+    padding-left: 10px;
 }
-.offersText span::before {
+.itemText span::before {
     content: '';
     position: absolute;
     top: 50%;
@@ -177,9 +178,18 @@
     width: 7px;
     height: 7px;
     border-radius: 7px;
-    background-color: #fff;
+    background-color: #000;
 }
-
+.itemText h3 {
+    font-size: 24px;
+    line-height: 1.1em;
+    font-weight: 400;
+    margin-bottom: 12px;
+}
+.itemText p {
+    font-size: 16px;
+    margin: 10px 0;
+}
 .footer {
     width: 100%;
     background-color: #f4f4f4;
