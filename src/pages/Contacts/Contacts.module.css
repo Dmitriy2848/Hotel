@@ -1,0 +1,210 @@
+.header {
+    width: 100%;
+    height: 85vh;
+    position: relative;
+
+    background-color: transparent;
+}
+.headerTop {
+    padding: 12px 5%;
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    z-index: 4;
+    transition: background-color .3s ease;
+}
+.header.scrolled .headerTop {
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.logo img {
+    height: 70px;
+    transition: height .7s ease;
+}
+.header.scrolled .logo img { height: 55px; }
+
+.headerMenu {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    display: flex;
+}
+.headerMenuItem {
+    list-style: none;
+    margin: 5px 1vw;
+}
+.headerMenuItem a {
+    font-size: 18px;
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+}
+.header.scrolled .headerMenuItem a { color: #000; }
+.headerMenuItem a::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    height: 1px;
+    transform: translateX(-101%);
+    transition: .7s ease;
+}
+.headerMenuItem a:hover::before {
+    transform: translateX(0);
+}
+.header.scrolled .headerMenuItem a::before { background-color: #000 }
+
+.headerContainer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.headerContainer:after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.9), transparent);
+    z-index: 2;
+}
+.headerImage {
+    position: relative;
+    width: inherit;
+    height: inherit;
+
+    object-fit: cover;
+    object-position: right;
+
+    z-index: 1;
+}
+
+.headerText {
+    width: 90%;
+    max-width: 1000px;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    text-align: center;
+    color: #fff;
+}
+.headerText h1 {
+    margin: 0 0 22px;
+    font-size: 100px;
+    font-weight: 500;
+    line-height: 1;
+    letter-spacing: -0.02em;
+}
+.headerText p {
+    font-size: 32px;
+    font-weight: 300;
+    line-height: 36px;
+    letter-spacing: -0.02em;
+}
+
+.form {
+    width: 500px;
+    margin: 0 auto 75px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.form input {
+    border: none;
+    outline: none;
+    background-color: #efefef;
+    padding: 10px;
+    margin: 10px 0;
+}
+.formFirstString {
+    display: flex;
+    justify-content: space-between;
+}
+.formFirstString input {
+    width: 48%;
+}
+.submit {
+    width: 50%;
+    padding: 10px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 18px;
+    transition: color .15s ease, background-color .35s ease;
+}
+.submit:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+.footer {
+    width: 100%;
+    background-color: #f4f4f4;
+    padding: 50px 0 25px;
+    border-top: 1px solid #e3e3e3;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 1.4;
+}
+.footerMenu {
+    width: 90%;
+    margin: 0 auto 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.footerMenuItem { list-style: none; }
+.footerMenuItem > a {
+    display: inline-block;
+    text-decoration: none;
+    color: #000;
+    font-weight: 700;
+    line-height: 1.4;
+    letter-spacing: -0.04em;
+    margin-bottom: 1em;
+}
+.footerMenuItemSubmenu li {
+    list-style: none;
+    margin-bottom: 1em;
+}
+.footerMenuItemSubmenu li a {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+    overflow: hidden;
+}
+.footerMenuItemSubmenu li a::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: translateX(-100%);
+    width: 100%;
+    height: 1px;
+    background-color: #000;
+    transition: .7s ease;
+}
+.footerMenuItemSubmenu li a:hover::before { transform: translateX(0); }
+.copyrightWrapper {
+    margin-left: 5%;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 1.4;
+    color: #000000;
+}

@@ -25,7 +25,6 @@ import {ReactComponent as Location5} from "../../assets/media/benefits/eat.svg";
 import {ReactComponent as Location6} from "../../assets/media/benefits/camera-save.svg";
 import {ReactComponent as Location7} from "../../assets/media/benefits/traide.svg";
 import {ReactComponent as Location8} from "../../assets/media/benefits/room-service.svg";
-import {ReactComponent as Location9} from "../../assets/media/benefits/update.svg";
 
 import logoLight from "../../assets/media/logo.png"
 import logoDark from "../../assets/media/logoDark.png"
@@ -486,10 +485,6 @@ const Main = () => {
                         <div className={s.benefitsItem}>
                             <Location8 />
                             <h3>Рум-сервис</h3>
-                        </div>
-                        <div className={s.benefitsItem}>
-                            <Location9 />
-                            <h3>Развернуть</h3>
                         </div>
                     </div>
                 </div>
