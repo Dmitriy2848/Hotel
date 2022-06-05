@@ -1,0 +1,35 @@
+@font-face {
+    font-family: "Circe";
+    font-style: normal;
+    font-weight: 800;
+    src:    local("Noto Sans"),
+            url("/src/assets/CirceFont/Circe-ExtraBold.woff") format("woff");
+}
+@font-face {
+    font-family: "Circe";
+    font-style: normal;
+    font-weight: 700;
+    src:    local("Noto Sans"),
+            url("/src/assets/CirceFont/Circe-Bold.woff") format("woff");
+}
+@font-face {
+    font-family: "Circe";
+    font-style: normal;
+    font-weight: 400;
+    src:    local("Noto Sans"),
+            url("/src/assets/CirceFont/Circe-Regular.woff") format("woff");
+}
+@font-face {
+    font-family: "Circe";
+    font-style: normal;
+    font-weight: 300;
+    src:    local("Noto Sans"),
+            url("/src/assets/CirceFont/Circe-Light.woff") format("woff");
+}
+@font-face {
+    font-family: "Circe";
+    font-style: normal;
+    font-weight: 100;
+    src:    local("Noto Sans"),
+            url("/src/assets/CirceFont/Circe-Thin.woff") format("woff");
+}

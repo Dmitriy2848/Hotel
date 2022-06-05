@@ -1,0 +1,8 @@
+@import "CirceFont.css";
+
+body { font-family: "Circe", sans-serif; overflow: hidden scroll}
+body::-webkit-scrollbar { width: 7px; }
+body::-webkit-scrollbar-thumb { background: rgba(0, 0, 0, 0.7); }
+body::-webkit-scrollbar-track { background: rgba(0, 0, 0, 0.2); }
+
+
