@@ -2,16 +2,38 @@ import {useState} from "react";
 import { NavLink } from "react-router-dom";
 import Slider from "react-slick";
 
-import forest from "../../assets/media/restaurants/1.jpg";
+import img_1 from '../../assets/media/restaurants/1.jpg';
+import img_2 from '../../assets/media/restaurants/2.jpg';
+import img_3 from '../../assets/media/restaurants/3.jpg';
+import img_4 from '../../assets/media/restaurants/4.jpg';
+import img_5 from '../../assets/media/restaurants/5.jpg';
+import img_6 from '../../assets/media/restaurants/6.jpg';
+import img_7 from '../../assets/media/restaurants/7.jpg';
+
+import img_2_1 from '../../assets/media/events/1.jpg';
+import img_2_2 from '../../assets/media/events/2.jpg';
+import img_2_3 from '../../assets/media/events/3.jpg';
+
 import {ReactComponent as Kitchen} from "../../assets/media/restaurants/kitchen-set-solid.svg";
 import {ReactComponent as Clock} from "../../assets/media/restaurants/clock-regular.svg";
+
 import {ReactComponent as Location} from "../../assets/media/benefits/location-pin-solid.svg";
+import {ReactComponent as Location2} from "../../assets/media/benefits/wi-fi.svg";
+import {ReactComponent as Location3} from "../../assets/media/benefits/butter.svg";
+import {ReactComponent as Location4} from "../../assets/media/benefits/parking.svg";
+import {ReactComponent as Location5} from "../../assets/media/benefits/eat.svg";
+import {ReactComponent as Location6} from "../../assets/media/benefits/camera-save.svg";
+import {ReactComponent as Location7} from "../../assets/media/benefits/traide.svg";
+import {ReactComponent as Location8} from "../../assets/media/benefits/room-service.svg";
+import {ReactComponent as Location9} from "../../assets/media/benefits/update.svg";
+
 import logoLight from "../../assets/media/logo.png"
 import logoDark from "../../assets/media/logoDark.png"
 import headerVideo from  "../../assets/media/main.mp4"
 import s from "./Main.module.css"
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+
 
 const Header = () => {
     const [ nav, setNav ] = useState(false);
@@ -199,12 +221,12 @@ const Main = () => {
                     <Slider {...settingsOne}>
                         <div className={s.slide} >
                             <div className={s.slideImage}>
-                                <img src={forest} alt=""/>
+                                <img src={img_1} alt="" />
                             </div>
                             <div className={s.slideInfo} >
                                 <h3>
                                     <NavLink to='restaurants/forest' >
-                                        Ресторан Forrest
+                                        Ресторан Forest
                                     </NavLink>
                                 </h3>
                                 <NavLink to='restaurants/forest' >
@@ -224,21 +246,21 @@ const Main = () => {
                         </div>
                         <div className={s.slide} >
                             <div className={s.slideImage}>
-                                <img src={forest} alt=""/>
+                            <img src={img_2} alt="" />
                             </div>
                             <div className={s.slideInfo} >
                                 <h3>
-                                    <NavLink to='restaurants/forest' >
-                                        Ресторан Forrest
+                                    <NavLink to='restaurants/gzhel' >
+                                        Ресторан Гжель
                                     </NavLink>
                                 </h3>
-                                <NavLink to='restaurants/forest' >
+                                <NavLink to='restaurants/gzhel' >
                                     подробнее
                                 </NavLink>
                                 <div className={s.itemContainer}>
                                     <div className={s.itemBlock}>
                                         <Kitchen />
-                                        <p>авторская, европейская</p>
+                                        <p>русская</p>
                                     </div>
                                     <div className={s.itemBlock}>
                                         <Clock />
@@ -249,21 +271,21 @@ const Main = () => {
                         </div>
                         <div className={s.slide} >
                             <div className={s.slideImage}>
-                                <img src={forest} alt=""/>
+                            <img src={img_3} alt="" />
                             </div>
                             <div className={s.slideInfo} >
                                 <h3>
-                                    <NavLink to='restaurants/forest' >
-                                        Ресторан Forrest
+                                    <NavLink to='restaurants/emerald' >
+                                        Ресторан Эмиральд
                                     </NavLink>
                                 </h3>
-                                <NavLink to='restaurants/forest' >
+                                <NavLink to='restaurants/emerald' >
                                     подробнее
                                 </NavLink>
                                 <div className={s.itemContainer}>
                                     <div className={s.itemBlock}>
                                         <Kitchen />
-                                        <p>авторская, европейская</p>
+                                        <p>авторская</p>
                                     </div>
                                     <div className={s.itemBlock}>
                                         <Clock />
@@ -274,70 +296,70 @@ const Main = () => {
                         </div>
                         <div className={s.slide} >
                             <div className={s.slideImage}>
-                                <img src={forest} alt=""/>
+                                <img src={img_4} alt="" />
                             </div>
                             <div className={s.slideInfo} >
                                 <h3>
-                                    <NavLink to='restaurants/forest' >
-                                        Ресторан Forrest
+                                    <NavLink to='restaurants/russian-hut' >
+                                        Русская изба Емеля
                                     </NavLink>
                                 </h3>
-                                <NavLink to='restaurants/forest' >
+                                <NavLink to='restaurants/russian-hut' >
                                     подробнее
                                 </NavLink>
                                 <div className={s.itemContainer}>
                                     <div className={s.itemBlock}>
                                         <Kitchen />
-                                        <p>авторская, европейская</p>
+                                        <p>русская</p>
                                     </div>
                                     <div className={s.itemBlock}>
                                         <Clock />
-                                        <p>12:00-23:00</p>
+                                        <p>09:00-18:00</p>
                                     </div>
                                 </div>
                             </div>
                         </div><div className={s.slide} >
                         <div className={s.slideImage}>
-                            <img src={forest} alt=""/>
+                            <img src={img_5} alt="" />
                         </div>
                         <div className={s.slideInfo} >
                             <h3>
-                                <NavLink to='restaurants/forest' >
-                                    Ресторан Forrest
+                                <NavLink to='restaurants/bar-library' >
+                                    Бар библиотека
                                 </NavLink>
                             </h3>
-                            <NavLink to='restaurants/forest' >
+                            <NavLink to='restaurants/bar-library' >
                                 подробнее
                             </NavLink>
                             <div className={s.itemContainer}>
                                 <div className={s.itemBlock}>
                                     <Kitchen />
-                                    <p>авторская, европейская</p>
+                                    <p>европейская</p>
                                 </div>
                                 <div className={s.itemBlock}>
                                     <Clock />
-                                    <p>12:00-23:00</p>
+                                    <p>12:00-00:00</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                         <div className={s.slide} >
                             <div className={s.slideImage}>
-                                <img src={forest} alt=""/>
+                                <img src={img_6} alt="" />
                             </div>
                             <div className={s.slideInfo} >
                                 <h3>
-                                    <NavLink to='restaurants/forest' >
-                                        Ресторан Forrest
+                                    <NavLink to='restaurants/wine-vault' >
+                                        Виный погреб
                                     </NavLink>
                                 </h3>
-                                <NavLink to='restaurants/forest' >
+                                <NavLink to='restaurants/wine-vault' >
                                     подробнее
                                 </NavLink>
                                 <div className={s.itemContainer}>
                                     <div className={s.itemBlock}>
                                         <Kitchen />
-                                        <p>авторская, европейская</p>
+                                        <p>виный погреб</p>
                                     </div>
                                     <div className={s.itemBlock}>
                                         <Clock />
@@ -348,25 +370,25 @@ const Main = () => {
                         </div>
                         <div className={s.slide} >
                             <div className={s.slideImage}>
-                                <img src={forest} alt=""/>
+                                <img src={img_7} alt="" />
                             </div>
                             <div className={s.slideInfo} >
                                 <h3>
-                                    <NavLink to='restaurants/forest' >
-                                        Ресторан Forrest
+                                    <NavLink to='restaurants/phyto-bar' >
+                                        Фито-бар
                                     </NavLink>
                                 </h3>
-                                <NavLink to='restaurants/forest' >
+                                <NavLink to='restaurants/phyto-bar' >
                                     подробнее
                                 </NavLink>
                                 <div className={s.itemContainer}>
                                     <div className={s.itemBlock}>
                                         <Kitchen />
-                                        <p>авторская, европейская</p>
+                                        <p>фито-бар</p>
                                     </div>
                                     <div className={s.itemBlock}>
                                         <Clock />
-                                        <p>12:00-23:00</p>
+                                        <p>09:00-21:00</p>
                                     </div>
                                 </div>
                             </div>
@@ -381,7 +403,7 @@ const Main = () => {
                     <Slider {...settingsTwo}>
                         <div className={s.slide} >
                             <div className={s.slideImage}>
-                                <img src={forest} alt=""/>
+                                <img src={img_2_1} alt="" />
                             </div>
                             <div className={s.slideInfo} >
                                 <h3>
@@ -397,7 +419,7 @@ const Main = () => {
                         </div>
                         <div className={s.slide} >
                             <div className={s.slideImage}>
-                                <img src={forest} alt=""/>
+                                <img src={img_2_2} alt="" />
                             </div>
                             <div className={s.slideInfo} >
                                 <h3>
@@ -413,7 +435,7 @@ const Main = () => {
                         </div>
                         <div className={s.slide} >
                             <div className={s.slideImage}>
-                                <img src={forest} alt=""/>
+                                <img src={img_2_3} alt="" />
                             </div>
                             <div className={s.slideInfo} >
                                 <h3>
@@ -438,36 +460,36 @@ const Main = () => {
                             <h3>Удобное расположение</h3>
                         </div>
                         <div className={s.benefitsItem}>
-                            <Location />
-                            <h3>Удобное расположение</h3>
+                            <Location2 />
+                            <h3>Бесплатный Wi-Fi</h3>
                         </div>
                         <div className={s.benefitsItem}>
-                            <Location />
-                            <h3>Удобное расположение</h3>
+                            <Location3 />
+                            <h3>Уникальные спецпредложения</h3>
                         </div>
                         <div className={s.benefitsItem}>
-                            <Location />
-                            <h3>Удобное расположение</h3>
+                            <Location4 />
+                            <h3>Парковка</h3>
                         </div>
                         <div className={s.benefitsItem}>
-                            <Location />
-                            <h3>Удобное расположение</h3>
+                            <Location5 />
+                            <h3>Вкусные и разнообразные завтраки</h3>
                         </div>
                         <div className={s.benefitsItem}>
-                            <Location />
-                            <h3>Удобное расположение</h3>
+                            <Location6 />
+                            <h3>Камера хранения</h3>
                         </div>
                         <div className={s.benefitsItem}>
-                            <Location />
-                            <h3>Удобное расположение</h3>
+                            <Location7 />
+                            <h3>Обмен валюты</h3>
                         </div>
                         <div className={s.benefitsItem}>
-                            <Location />
-                            <h3>Удобное расположение</h3>
+                            <Location8 />
+                            <h3>Рум-сервис</h3>
                         </div>
                         <div className={s.benefitsItem}>
-                            <Location />
-                            <h3>Удобное расположение</h3>
+                            <Location9 />
+                            <h3>Развернуть</h3>
                         </div>
                     </div>
                 </div>
