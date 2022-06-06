@@ -1,9 +1,18 @@
 import { NavLink } from "react-router-dom";
 import {useState} from "react";
-import header from "../../assets/media/offers/header.jpg";
+import header from '../../assets/media/restaurants/3.jpg';
 import s from "./Restaurants.module.css";
 import logoDark from "../../assets/media/logoDark.png";
 import logoLight from "../../assets/media/logo.png";
+
+import img_1 from '../../assets/media/restaurants/1.jpg';
+import img_2 from '../../assets/media/restaurants/2.jpg';
+import img_3 from '../../assets/media/restaurants/3.jpg';
+import img_4 from '../../assets/media/restaurants/4.jpg';
+import img_5 from '../../assets/media/restaurants/5.jpg';
+import img_6 from '../../assets/media/restaurants/6.jpg';
+import img_7 from '../../assets/media/restaurants/7.jpg';
+import img_8 from '../../assets/media/restaurants/8.jpg';
 
 const Header = () => {
     const [ nav, setNav ] = useState(false);
@@ -132,112 +141,134 @@ const Restaurants = () => {
                 <div className={s.list}>
                     <div className={s.item}>
                         <NavLink to='forest' className={s.itemImage}>
-                            <img src={header} alt=""/>
+                            <img src={img_1} alt=""/>
                         </NavLink>
                         <div className={s.itemText}>
                             <NavLink to='forest' >
                                 <h3>Ресторан Forrest</h3>
                             </NavLink>
-                            <p>Ресторан с верандой и панорамными видами. Двухэтажное здание из дерева в скандинавском стиле является органичным продолжением окружающих первозданных пейзажей</p><p>Ресторан с верандой и панорамными видами. Двухэтажное здание из дерева в скандинавском стиле является органичным продолжением окружающих первозданных пейзажей</p>
+                            <p>Ресторан с верандой и панорамными видами. Двухэтажное здание из дерева в скандинавском 
+                                стиле является органичным продолжением окружающих первозданных пейзажей</p>
                             <NavLink to='forest' >
                                 <span>подробнее</span>
                             </NavLink>
                         </div>
                     </div>
                     <div className={s.item}>
-                        <NavLink to='forest' className={s.itemImage}>
-                            <img src={header} alt=""/>
+                        <NavLink to='gzhel' className={s.itemImage}>
+                            <img src={img_2} alt=""/>
                         </NavLink>
                         <div className={s.itemText}>
-                            <NavLink to='forest' >
-                                <h3>Ресторан Forrest</h3>
+                            <NavLink to='gzhel' >
+                                <h3>Ресторан Гжель</h3>
                             </NavLink>
-                            <p>Ресторан с верандой и панорамными видами. Двухэтажное здание из дерева в скандинавском стиле является органичным продолжением окружающих первозданных пейзажей</p><p>Ресторан с верандой и панорамными видами. Двухэтажное здание из дерева в скандинавском стиле является органичным продолжением окружающих первозданных пейзажей</p>
-                            <NavLink to='forest' >
+                            <p>Изящество и самобытность декоративно-прикладного искусства гжель подчеркнута в 
+                                сине-белых оттенках декоративных элементов. Традиционные узоры, присущие стилю, 
+                                особая сервировка стола и посуда с традиционной гжельской росписью, создают атмосферу
+                                 необычайного домашнего уюта</p>
+                            <NavLink to='gzhel' >
                                 <span>подробнее</span>
                             </NavLink>
                         </div>
                     </div>
                     <div className={s.item}>
-                        <NavLink to='forest' className={s.itemImage}>
-                            <img src={header} alt=""/>
+                        <NavLink to='emerald' className={s.itemImage}>
+                            <img src={img_3} alt=""/>
                         </NavLink>
                         <div className={s.itemText}>
-                            <NavLink to='forest' >
-                                <h3>Ресторан Forrest</h3>
+                            <NavLink to='emerald' >
+                                <h3>Ресторан Эмеральд</h3>
                             </NavLink>
-                            <p>Ресторан с верандой и панорамными видами. Двухэтажное здание из дерева в скандинавском стиле является органичным продолжением окружающих первозданных пейзажей</p><p>Ресторан с верандой и панорамными видами. Двухэтажное здание из дерева в скандинавском стиле является органичным продолжением окружающих первозданных пейзажей</p>
-                            <NavLink to='forest' >
+                            <p>Каждое блюдо – это результат сочетания гастрономических экспериментов и бережного 
+                                отношения. Основная идея интерьера – создание современной, непринуждённой и спокойной 
+                                атмосферы, которая будет привлекать своим очарованием и индивидуальным стилем. 
+                                Панорамные окна ресторана откроют перед вами всю красоту и изящность леса</p>
+                            <NavLink to='emerald' >
                                 <span>подробнее</span>
                             </NavLink>
                         </div>
                     </div>
                     <div className={s.item}>
-                        <NavLink to='forest' className={s.itemImage}>
-                            <img src={header} alt=""/>
+                        <NavLink to='russian-hut' className={s.itemImage}>
+                            <img src={img_4} alt=""/>
                         </NavLink>
                         <div className={s.itemText}>
-                            <NavLink to='forest' >
-                                <h3>Ресторан Forrest</h3>
+                            <NavLink to='russian-hut' >
+                                <h3>Русская изба Емеля</h3>
                             </NavLink>
-                            <p>Ресторан с верандой и панорамными видами. Двухэтажное здание из дерева в скандинавском стиле является органичным продолжением окружающих первозданных пейзажей</p><p>Ресторан с верандой и панорамными видами. Двухэтажное здание из дерева в скандинавском стиле является органичным продолжением окружающих первозданных пейзажей</p>
-                            <NavLink to='forest' >
+                            <p>Какой предмет интерьера может стать символом русской кухни? Русская печь. В нашей избе 
+                                она занимает особое место, наполняя его неповторимой индивидуальностью, создавая теплую 
+                                атмосферу загородной жизни</p>
+                            <NavLink to='russian-hut' >
                                 <span>подробнее</span>
                             </NavLink>
                         </div>
                     </div>
                     <div className={s.item}>
-                        <NavLink to='forest' className={s.itemImage}>
-                            <img src={header} alt=""/>
+                        <NavLink to='bar-library' className={s.itemImage}>
+                            <img src={img_5} alt=""/>
                         </NavLink>
                         <div className={s.itemText}>
-                            <NavLink to='forest' >
-                                <h3>Ресторан Forrest</h3>
+                            <NavLink to='bar-library' >
+                                <h3>Бар Библиотека</h3>
                             </NavLink>
-                            <p>Ресторан с верандой и панорамными видами. Двухэтажное здание из дерева в скандинавском стиле является органичным продолжением окружающих первозданных пейзажей</p><p>Ресторан с верандой и панорамными видами. Двухэтажное здание из дерева в скандинавском стиле является органичным продолжением окружающих первозданных пейзажей</p>
-                            <NavLink to='forest' >
+                            <p>Теперь вы можете отдохнуть, перекусить, выпить чашечку кофе или чего покрепче 
+                                непосредственно в основном корпусе гостиницы.</p>
+                            <p>Высокие потолки бара Библиотека дарят 
+                                присутствие свободного пространства, мебель и предметы интерьера изящно гармонируют с 
+                                общей обстановкой бара, из витражных окон открывается вид на пейзаж хвойного леса.</p>
+                            <p>В меню представлены блюда европейской кухни от классических и до настоящих авторских 
+                                шедевров. Барная карта здесь состоит из классических и авторских коктейлей, вина и 
+                                коллекции крепкого алкоголя</p>
+                            <NavLink to='bar-library' >
                                 <span>подробнее</span>
                             </NavLink>
                         </div>
                     </div>
                     <div className={s.item}>
-                        <NavLink to='forest' className={s.itemImage}>
-                            <img src={header} alt=""/>
+                        <NavLink to='wine-vault' className={s.itemImage}>
+                            <img src={img_6} alt=""/>
                         </NavLink>
                         <div className={s.itemText}>
-                            <NavLink to='forest' >
-                                <h3>Ресторан Forrest</h3>
+                            <NavLink to='wine-vault' >
+                                <h3>Винный погреб</h3>
                             </NavLink>
-                            <p>Ресторан с верандой и панорамными видами. Двухэтажное здание из дерева в скандинавском стиле является органичным продолжением окружающих первозданных пейзажей</p><p>Ресторан с верандой и панорамными видами. Двухэтажное здание из дерева в скандинавском стиле является органичным продолжением окружающих первозданных пейзажей</p>
-                            <NavLink to='forest' >
+                            <p>В винном погребе собрано более 100 сортов благородных вин от лучших виноделов. Ждем вас 
+                                продегустировать нашу эксклюзивную коллекцию, а также попробовать элитные сигары в 
+                                аутентичной атмосфере сигарной комнаты</p>
+                            <NavLink to='wine-vault' >
                                 <span>подробнее</span>
                             </NavLink>
                         </div>
                     </div>
                     <div className={s.item}>
-                        <NavLink to='forest' className={s.itemImage}>
-                            <img src={header} alt=""/>
+                        <NavLink to='phyto-bar' className={s.itemImage}>
+                            <img src={img_7} alt=""/>
                         </NavLink>
                         <div className={s.itemText}>
-                            <NavLink to='forest' >
-                                <h3>Ресторан Forrest</h3>
+                            <NavLink to='phyto-bar' >
+                                <h3>Фито-бар</h3>
                             </NavLink>
-                            <p>Ресторан с верандой и панорамными видами. Двухэтажное здание из дерева в скандинавском стиле является органичным продолжением окружающих первозданных пейзажей</p><p>Ресторан с верандой и панорамными видами. Двухэтажное здание из дерева в скандинавском стиле является органичным продолжением окружающих первозданных пейзажей</p>
-                            <NavLink to='forest' >
+                            <p>Попробуйте напитки, которые помогут активизировать работу иммунной системы, повысить 
+                                работоспособность и снять напряжение после физических нагрузок, а внимательный персонал 
+                                окружит вас заботой</p>
+                            <NavLink to='phyto-bar' >
                                 <span>подробнее</span>
                             </NavLink>
                         </div>
                     </div>
                     <div className={s.item}>
-                        <NavLink to='forest' className={s.itemImage}>
-                            <img src={header} alt=""/>
+                        <NavLink to='room-service' className={s.itemImage}>
+                            <img src={img_8} alt=""/>
                         </NavLink>
                         <div className={s.itemText}>
-                            <NavLink to='forest' >
-                                <h3>Ресторан Forrest</h3>
+                            <NavLink to='room-service' >
+                                <h3>Обслуживание в номерах</h3>
                             </NavLink>
-                            <p>Ресторан с верандой и панорамными видами. Двухэтажное здание из дерева в скандинавском стиле является органичным продолжением окружающих первозданных пейзажей</p><p>Ресторан с верандой и панорамными видами. Двухэтажное здание из дерева в скандинавском стиле является органичным продолжением окружающих первозданных пейзажей</p>
-                            <NavLink to='forest' >
+                            <p>Вам не нужно выходить из номера за ужином или чашечкой кофе. Просто закажите блюда из 
+                                меню по телефону, и мы доставим их в номер.</p>
+                            <p>В любое время вам доступны напитки и самые лучшие блюда от наших Шеф-поваров.</p>
+                            <NavLink to='room-service' >
                                 <span>подробнее</span>
                             </NavLink>
                         </div>
