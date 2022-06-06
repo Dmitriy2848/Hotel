@@ -5,6 +5,10 @@ import logoDark from "../../assets/media/logoDark.png";
 import logoLight from "../../assets/media/logo.png";
 import header from "../../assets/media/offers/header.jpg"
 
+import img_1 from '../../assets/media/offers/1.jpg';
+import img_2 from '../../assets/media/offers/2.jpg';
+import img_4 from '../../assets/media/offers/4.jpg';
+
 const Header = () => {
     const [ nav, setNav ] = useState(false);
 
@@ -85,7 +89,7 @@ const Footer = () => {
                         </li>
                         <li>
                             <NavLink to='relax-more-pay-less' >
-                                Отдыхайте больше - платите меньше
+                                Отдыхайте больше – платите меньше
                             </NavLink>
                         </li>
                     </ul>
@@ -131,23 +135,23 @@ const Offers = () => {
             <Header />
             <main className={s.offers}>
                 <div className={s.offer} >
-                    <img src={header} alt="" className={s.offerImage} />
+                    <img src={img_1} alt="" className={s.offerImage} />
                     <NavLink to='guest-visit' className={s.offersText} >
-                        <h3>Подарочный сертификат</h3>
+                        <h3>Гостевой визит</h3>
                         <span>Подробнее</span>
                     </NavLink>
                 </div>
                 <div className={s.offer} >
-                    <img src={header} alt="" className={s.offerImage} />
-                    <NavLink to='banquets' className={s.offersText} >
-                        <h3>Подарочный сертификат</h3>
+                    <img src={img_2} alt="" className={s.offerImage} />
+                    <NavLink to='you-best-birthday' className={s.offersText} >
+                        <h3>Ваш лучший День Рождения</h3>
                         <span>Подробнее</span>
                     </NavLink>
                 </div>
                 <div className={s.offer} >
-                    <img src={header} alt="" className={s.offerImage} />
-                    <NavLink to='weddings' className={s.offersText} >
-                        <h3>Подарочный сертификат</h3>
+                    <img src={img_4} alt="" className={s.offerImage} />
+                    <NavLink to='relax-more-pay-less' className={s.offersText} >
+                        <h3>Отдыхайте больше – платите меньше</h3>
                         <span>Подробнее</span>
                     </NavLink>
                 </div>
