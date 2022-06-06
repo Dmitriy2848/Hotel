@@ -133,6 +133,7 @@ const Footer = () => {
         </footer>
     )
 }
+
 const Restaurants = () => {
     return (
         <div>

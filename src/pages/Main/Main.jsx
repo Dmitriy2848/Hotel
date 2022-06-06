@@ -9,6 +9,7 @@ import img_4 from '../../assets/media/restaurants/4.jpg';
 import img_5 from '../../assets/media/restaurants/5.jpg';
 import img_6 from '../../assets/media/restaurants/6.jpg';
 import img_7 from '../../assets/media/restaurants/7.jpg';
+import img_8 from '../../assets/media/restaurants/8.jpg'
 
 import img_2_1 from '../../assets/media/events/1.jpg';
 import img_2_2 from '../../assets/media/events/2.jpg';
@@ -388,6 +389,27 @@ const Main = () => {
                                     <div className={s.itemBlock}>
                                         <Clock />
                                         <p>09:00-21:00</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className={s.slide} >
+                            <div className={s.slideImage}>
+                                <img src={img_8} alt="" />
+                            </div>
+                            <div className={s.slideInfo} >
+                                <h3>
+                                    <NavLink to='restaurants/room-service' >
+                                        Обслуживание в номерах
+                                    </NavLink>
+                                </h3>
+                                <NavLink to='restaurants/room-service' >
+                                    подробнее
+                                </NavLink>
+                                <div className={s.itemContainer}>
+                                    <div className={s.itemBlock}>
+                                        <Clock />
+                                        <p>00:00-24:00</p>
                                     </div>
                                 </div>
                             </div>
