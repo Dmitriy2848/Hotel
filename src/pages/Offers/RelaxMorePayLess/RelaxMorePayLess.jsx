@@ -3,7 +3,11 @@ import header from "../../../assets/media/offers/header.jpg";
 import s from "./RelaxMorePayLess.module.css";
 import {NavLink} from "react-router-dom";
 import logoDark from "../../../assets/media/logoDark.png";
-import img_business_events from "../../../assets/media/events/1.jpg";
+
+import img_header from "../../../assets/media/offers/4.jpg";
+import img_1 from "../../../assets/media/offers/1.jpg";
+import img_2 from "../../../assets/media/offers/2.jpg";
+
 const Header = () => {
     const [ nav, setNav ] = useState(false);
 
@@ -123,7 +127,7 @@ const RelaxMorePayLess = () => {
             <main>
                 <div className={s.guestVisit}>
                     <div className={s.image}>
-                        <img src={img_business_events} alt=""  />
+                        <img src={img_header} alt=""  />
                     </div>
                     <div className={s.text}>
                         <h1>Отдыхайте больше – платите меньше</h1>
@@ -135,25 +139,25 @@ const RelaxMorePayLess = () => {
                 <h2>Другие акции</h2>
                 <div className={s.otherOffers}>
                     <div className={s.item}>
-                        <NavLink to='business-events' >
-                            <img src={img_business_events} alt=""/>
+                        <NavLink to='/offers/guest-visit' >
+                            <img src={img_1} alt=""/>
                         </NavLink>
                         <div className={s.itemText}>
-                            <h3>Деловые мероприятия</h3>
-                            <p>В конгресс-холле можно провести деловое мероприятие, организовать совещания или устроить переговоры с партнёрами</p>
-                            <NavLink to='business-events' >
+                        <h3>Гостевой визит</h3>
+                            <p></p>
+                            <NavLink to='/offers/guest-visit' >
                                 <span>подробнее</span>
                             </NavLink>
                         </div>
                     </div>
                     <div className={s.item}>
-                        <NavLink to='business-events' >
-                            <img src={img_business_events} alt=""/>
+                        <NavLink to='/offers/you-best-birthday' >
+                            <img src={img_2} alt=""/>
                         </NavLink>
                         <div className={s.itemText}>
-                            <h3>Деловые мероприятия</h3>
-                            <p>В конгресс-холле можно провести деловое мероприятие, организовать совещания или устроить переговоры с партнёрами</p>
-                            <NavLink to='business-events' >
+                            <h3>Ваш лучший День Рождения</h3>
+                            <p></p>
+                            <NavLink to='/offers/you-best-birthday' >
                                 <span>подробнее</span>
                             </NavLink>
                         </div>
